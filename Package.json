@@ -1,0 +1,10 @@
+{
+    "name": "com.rodrigoueda.objectpool",
+    "displayName": "ObjectPool",
+    "version": "0.1.0",
+    "unity": "2020.1",
+    "description": "Object pool for unity.",
+    "dependencies" : {
+	    "com.rodrigoueda.unitybasecode": "https://github.com/rodrigoueda/com.rodrigoueda.unitybasecode.git#0.1.1"
+    }
+}
