@@ -19,7 +19,8 @@ public class TestObjectPool : MonoBehaviour
         cubes.Prewarm();
     }
 }
-```
+
+``
 
 - On unity editor, there is additional information to edit:
 
@@ -77,7 +78,7 @@ void Update()
 }
 ```
 
-- Also, it`s possible to delay the recycle using a second parameter, the value is in seconds
+- Also, it's possible to delay the recycle using a second parameter, the value is in seconds
 
 ```C#
 void Update()
@@ -97,7 +98,7 @@ void Update()
 ## IPoolable interface
 
 - Optionally, the prefab script can implement IPoolable interface
-- This way, every time it`s instance is retrieved or recycled, the methods ``` Retrieve() ``` and ``` Recycle() ``` will be fired respectively.
+- This way, every time it's instance is retrieved or recycled, the methods ``` Retrieve() ``` and ``` Recycle() ``` will be fired respectively.
 
 ```C#
 using UnityEngine;
@@ -119,9 +120,9 @@ public class CubeBehaviour : MonoBehaviour, IPoolable
 
 ## Managed Update
 
-- When working with a great amount of objects, it`s considered a good practice to center each individual ``` Update() ``` into a single behaviour in order to optimize performance
+- When working with a great amount of objects, it's considered a good practice to center each individual ``` Update() ``` into a single behaviour in order to optimize performance
 - ObjectPoolManager is also able to concentrate instanced objects updates, just extend IManagedUpdate interface
-- It`s possible to combine IPoolable and IManagedUpdate interfaces
+- It's possible to combine IPoolable and IManagedUpdate interfaces
 
 ```C#
 using UnityEngine;
